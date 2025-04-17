@@ -40,7 +40,7 @@ function App() {
   }, [screenSharing]);
 
   useEffect(() => {
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io('https://webrtc3-1.onrender.com');
 
     const handleExistingUsers = (users) => {
       users.forEach(user => {
